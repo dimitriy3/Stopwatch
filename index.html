@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Stopwatch</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./favicon.png">
+    <meta name="application-name" content="Stopwatch" />
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+
+    <!-- Loader -->
+    <div id="preloader">
+      <div class="loader">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <!-- App -->
+    <div class="wrapper">
+      <div class="stopwatch">
+        <span id="min">00</span>
+        <span id="sec">00</span>
+        <span id="milisec">00</span>
+      </div>
+      <div class="btns">
+        <div class="btn">
+          <i class="material-icons refresh-icon" onclick="reset()">refresh</i>
+        </div>
+        <div class="btn btn-large" onclick="startStop()">
+          <i class="material-icons play-icon" id="start">play_arrow</i>
+        </div>
+        <div class="btn">
+          <i class="material-icons dark-icon" onclick="switchTheme()">opacity</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/stopwatch.js"></script>
+    <script src="./js/loader.js"></script>
+  </body>
+</html>
